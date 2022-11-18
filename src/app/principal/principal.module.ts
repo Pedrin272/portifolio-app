@@ -19,15 +19,23 @@ import { NavegacaoComponent } from './navegacao/navegacao.component';
 import { PrincipalRoutes } from './principal.routing';
 import { SobreComponent } from './sobre/sobre.component';
 import { Page404Component } from './page404/page404.component';
+import { MatFormFieldModule } from '@angular/material/form-field';
+
 
 @NgModule({
-  declarations: [NavegacaoComponent, CepComponent, SobreComponent, Page404Component],
+  declarations: [
+    NavegacaoComponent,
+    CepComponent,
+    SobreComponent,
+    Page404Component,
+  ],
   imports: [
     CommonModule,
     PrincipalRoutes,
     LayoutModule,
     MatToolbarModule,
     MatButtonModule,
+    MatFormFieldModule,
     MatSidenavModule,
     MatIconModule,
     MatListModule,
